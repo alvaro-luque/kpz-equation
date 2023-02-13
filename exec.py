@@ -96,10 +96,3 @@ for i,n in enumerate(N): #betas calculation
     popt, pcov=np.polyfit(np.log(time[cond])[2:5], np.log(wn[i][cond])[2:5],1, cov=True)
     betas[i]=popt[0]
     errorb[i]=np.sqrt(np.diag(pcov))[0]
-    
-
-    
-
-
-
-   
